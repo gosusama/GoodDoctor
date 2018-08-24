@@ -18,9 +18,10 @@ namespace DG.API.Controllers.Au
             _service = service;
         }
 
+        [Authorize(Roles = "MEMBER")]
         public IHttpActionResult Get()
         {
-            return Ok(_service.Hello());
+            return Ok();
         }
     }
 }

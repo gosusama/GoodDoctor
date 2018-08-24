@@ -20,12 +20,6 @@ namespace DG.API
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-
-            config.Routes.MapHttpRoute(
-                name: "actionApi",
-                routeTemplate: "api/{controller}/{action}/{code}",
-                defaults: new { code = RouteParameter.Optional }
-            );
         }
     }
 }
