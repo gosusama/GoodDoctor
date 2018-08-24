@@ -12,7 +12,7 @@ namespace DG.API.ENTITY
 {
     class DGContext : DataContext
     {
-        public DGContext() : base("name=DGDB")
+        public DGContext() : base("name=DBGD")
         {
 
         }
