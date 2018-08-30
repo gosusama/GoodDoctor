@@ -93,6 +93,10 @@
     <Compile Include="Migrations\201808220606577_20180822_editSU_HA.Designer.cs">
       <DependentUpon>201808220606577_20180822_editSU_HA.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808300853238_add_SYSUSER.cs" />
+    <Compile Include="Migrations\201808300853238_add_SYSUSER.Designer.cs">
+      <DependentUpon>201808300853238_add_SYSUSER.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Authorize\AU_USER_GROUP_PERMISION.cs" />
     <Compile Include="Models\Authorize\AU_USER_PERMISION.cs" />
@@ -127,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808220606577_20180822_editSU_HA.resx">
       <DependentUpon>201808220606577_20180822_editSU_HA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808300853238_add_SYSUSER.resx">
+      <DependentUpon>201808300853238_add_SYSUSER.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

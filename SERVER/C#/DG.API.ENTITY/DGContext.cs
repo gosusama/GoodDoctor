@@ -18,6 +18,7 @@ namespace DG.API.ENTITY
         }
 
         //Auth
+        public DbSet<SYS_USER> SYS_USERs { get; set; }
         public DbSet<AU_GROUP_PERMISION> AU_GROUP_PERMISIONs { get; set; }
         public DbSet<AU_GRP_PERMISION_FUNC> AU_GRP_PERMISION_FUNCs { get; set; }
         public DbSet<AU_USER_GROUP_PERMISION> AU_USER_GROUP_PERMISIONs { get; set; }

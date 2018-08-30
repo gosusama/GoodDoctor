@@ -26,14 +26,14 @@ namespace DG.API.Providers
             try
             {
                 var user = new SYS_USER();
-                using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["STCConnection"].ConnectionString))
+                using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBGD"].ConnectionString))
                 {
                     await connection.OpenAsync();
                     using (var command = connection.CreateCommand())
                     {
                         command.CommandType = CommandType.Text;
                         command.CommandText =
-                            "SELECT * FROM SYS_USER WHERE USERNAME='" + context.UserName + "' AND PASSWORD='" + MD5Encrypt.MD5Hash(context.Password) + "' AND TRANGTHAI=1";
+                            "SELECT * FROM SYS_USER WHERE USERNAME='" + context.UserName + "' AND PASSWORD='" + context.Password + "' AND STATUS=1";
                         using (var sqlDataReader = command.ExecuteReaderAsync(CommandBehavior.CloseConnection))
                         {
                             if (!sqlDataReader.Result.HasRows)
