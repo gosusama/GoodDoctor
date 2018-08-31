@@ -5,7 +5,7 @@ import LoginScreen from './src/app/components/screens/LoginScreen';
 import HomeScreen from './src/app/components/screens/HomeScreen';
 
 
-export default class HelloWorldApp extends Component {
+export default class GoodDoctorApp extends Component {
   render() {
     return (
       <RootStack/>
