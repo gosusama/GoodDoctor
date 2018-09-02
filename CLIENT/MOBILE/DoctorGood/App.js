@@ -1,26 +1,13 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
-import LoginScreen from './src/app/components/screens/LoginScreen';
-import HomeScreen from './src/app/components/screens/HomeScreen';
+import State from './src/app/State'
 
 
 export default class GoodDoctorApp extends Component {
   render() {
     return (
-      <RootStack/>
+      <State/>
     );
   }
 }
-const RootStack = createStackNavigator(
-  {
-    Login: {
-      screen: LoginScreen,
-    },
-    Home: {
-      screen: HomeScreen,
-    },
-  }, {
-    initialRouteName: 'Login',
-  }
-)
