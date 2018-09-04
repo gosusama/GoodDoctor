@@ -4,9 +4,7 @@ var Request = require('tedious').Request;
 var config = {
     userName: 'sa',
     password: 'admin@123',
-    server: '172.20.10.2',
-    //db name : DBGD port: 1433
-    // If you're on Windows Azure, you will need this:
+    server: '192.168.0.102',
     options: {
         database:"DBGD",
         encrypt: true,

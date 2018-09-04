@@ -1,25 +1,27 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, SafeAreaView } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
-import LoginScreen from './components/screens/LoginScreen';
+import LoginNavigator from './components/screens/LoginScreen';
 import HomeScreen from './components/screens/HomeScreen';
 
 export default class State extends Component {
-    render() {
-      return (
-        <RootStack/>
-      );
-    }
+  render() {
+    return (
+      <SafeAreaView>
+        <RootStack />
+      </SafeAreaView>
+    );
   }
-  const RootStack = createStackNavigator(
-    {
-      Login: {
-        screen: LoginScreen,
-      },
-      Home: {
-        screen: HomeScreen,
-      },
-    }, {
-      initialRouteName: 'Login',
-    }
-  )
+}
+const RootStack = createStackNavigator(
+  {
+    Login: {
+      screen: LoginNavigator,
+    },
+    Home: {
+      screen: HomeScreen,
+    },
+  }, {
+    initialRouteName: 'Login',
+  }
+)
